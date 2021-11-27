@@ -29,7 +29,7 @@ print('c + d =', c+d)
 
 print(1/2)
 
-print(10//6)  # how many times can be divided
+print(10//6)  # how many times can be divided, output 1
 print(10%6) #left after division
 print(2**3) # Exponent - left operant raised to the power of right
 
