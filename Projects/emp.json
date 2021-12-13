@@ -1,0 +1,15 @@
+{ "employees": {
+    "employee": [
+    { "id": "1",
+    "firstName": "Tom",
+    "lastName": "Cruise",
+    "photo": "cdn2.gossipcenter.com/sites/default/files/imagecac..."},
+    { "id": "2",
+    "firstName": "Maria",
+    "lastName": "Sharapova",
+    "photo": "thewallmachine.com/files/1363603040.jpg"},
+    { "id": "3",
+    "firstName": "James",
+    "lastName": "Bond",
+    "photo": "georgesjournal.files.wordpress.com/2012/02/007_at_..."}]}}
+    
