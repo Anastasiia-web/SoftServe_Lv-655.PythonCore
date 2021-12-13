@@ -1,4 +1,4 @@
-# Web Scrapping helps to have notes in 1 sec from w3school site;)
+# Web Scraping helps to have notes in 1 sec from w3school site;)
 # https://www.w3schools.com/python/python_classes.asp
 # documentation https://www.crummy.com/software/BeautifulSoup/bs4/doc.ru/bs4ru.html#id51
 
