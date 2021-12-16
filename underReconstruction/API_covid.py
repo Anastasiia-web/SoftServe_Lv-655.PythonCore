@@ -67,36 +67,45 @@
 # print(f"In Total death due to confirmed Covid-19 cases in {country}: {total_death}")
 
 #_____________________
-# LAST WORKING VERSION
-import requests                                                                # print(endpoint_last_day.status_code)
-from datetime import date, timedelta
+# # LAST WORKING VERSION        with saving to txt / xlsx files
+# import requests                                                                # print(endpoint_last_day.status_code)
+# from datetime import date, timedelta
 
-today = date.today()
-yesterday = today - timedelta(days=1)
+# today = date.today()
+# yesterday = today - timedelta(days=1)
 
-country = input('Country? ').capitalize()
+# country = input('Country? ').capitalize()
 
-import json                # ПОДКЛЮЧЕНИЕ ФАЙЛА Json to Python
+# import json                # ПОДКЛЮЧЕНИЕ ФАЙЛА Json to Python
 
-json_file_path = "Projects\countries_list.json"
+# json_file_path = "underReconstruction\countries_list.json"
 
-with open(json_file_path, 'r') as j:
-    contries_list = json.loads(j.read())
+# with open(json_file_path, 'r') as j:
+#     contries_list = json.loads(j.read())
 
-    for x in contries_list:
-        countries_list = x['country']
+#     for x in contries_list:
+#         countries_list = x['country']
 
-    for x in contries_list:
-        if x['country'] == country:
-            index_countries_list = contries_list.index(x)
-            population = contries_list[index_countries_list]['population']
+#     for x in contries_list:
+#         if x['country'] == country:
+#             index_countries_list = contries_list.index(x)
+#             population = contries_list[index_countries_list]['population']
+            
 
-print(f"Population in {country}: {population}")
+# print(f"Population in {country}: {population}")
+# for_notes = f"{today}   |   Population  |  {country}   |   {population}"
 
+# file = open("n_3.xlsx", "a")
+# file.write(for_notes)
+# file.close()
+#__________________
+# with open(json_file_path, 'r') as j:                         #  WORKING WITH JSON FILE  печаем население для 0 индекса
+#     contents = json.loads(j.read())
+#     print(type(contents))
 
 #+++++++++++++++++++++++++
 
-# WORKING WITH JSON FILE + API
+# # WORKING WITH JSON FILE + API
 # import requests                                                                # print(endpoint_last_day.status_code)
 # from datetime import date, timedelta
 
