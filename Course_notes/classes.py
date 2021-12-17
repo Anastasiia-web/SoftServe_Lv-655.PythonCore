@@ -1,5 +1,8 @@
 #My drafts
 
+# Shift + Tab  - сдвиг влево блока кода
+# Tab  - сдвиг вправо блока кода
+
 # def list_animals(animals):   # SUBMITED))) but not adopted for new animals in the list !!!
 #     list = []
 #     for i in animals:
@@ -82,21 +85,120 @@
 # p = Lesson(0, 0)
 # print(p)
 
-#____________________
-try: 
-    a = int(input("Enter your number: ")) 
-    if a < 4: 
-        b = a/(a-3)         # throws ZeroDivisionError for a = 3 
+# #____________________
+# try: 
+#     a = int(input("Enter your number: ")) 
+#     if a < 4: 
+#         b = a/(a-3)         # throws ZeroDivisionError for a = 3 
     
-    if a >= 4:      
-        print("Value of b = ", b)    # throws NameError 
+#     if a >= 4:      
+#         print("Value of b = ", b)    # throws NameError 
 
-# note that braces () are necessary here for multiple exceptions 
-except ValueError:
-    print("Value Error!")
-except NameError: 
-    print("NameError!")
-except ZeroDivisionError:
-    print("ZeroDivisionError!")
-except:
-    print("Error!")
+# # note that braces () are necessary here for multiple exceptions 
+# except ValueError:
+#     print("Value Error!")
+# except NameError: 
+#     print("NameError!")
+# except ZeroDivisionError:
+#     print("ZeroDivisionError!")
+# except:
+#     print("Error!")
+
+
+X = set('spam') # В 2.6 и 3.0 можно создавать из последовательностей
+Y = {'h', 'a', 'm'} # В 3.0 можно определять литералы множеств
+X, Y
+# ({'a', 'p', 's', 'm'}, {'a', 'h', 'm'})
+print(X, Y)
+X & Y # Пересечение
+print(X & Y)
+#{'a', 'm'}
+
+X | Y # Объединение
+# {'a', 'p', 's', 'h', 'm'}
+print(X | Y)
+
+#X – Y # Разность
+# {'p', 's'}
+print(''.join(X - Y))     # "".join(array_to_str) !!!
+
+
+# Генерация списка чисел в рэнже от 0 до 10
+#max = range(10) #Генерування послідовності чисел від 0 до 9
+for num in range(10): #Пока переменная number (которая каждый раз увеличивается на единицу) входит в список…
+    print(num)
+
+list2=['яблуко ' ,'груша','ананас'] # Створення списку з даними рядкового типу
+i = 0
+while i <= 2:
+    print(list2[i]+str(i)) # str(i) - перетворення числового типу в рядковий
+    i += 1
+
+g = """hjk
+mnm,m/.,
+mnkmkm
+"""
+
+print(g)
+
+# print(list2.index("яблуко"))                 № возвращает индекс
+list3 = [x for x in list2 if x.strip()!='']    # обрезает спэйсы в списке
+print(list3)
+list4 = [x for x in list3[0] if x.strip()!='']
+b = "".join(list4)
+print(b)
+print(list3.extend([b]))       # не могу добавить яблоко в список!!!
+
+#_______________
+
+# db = MySQLdb.connect("localhost", "username", "password", "dbname")
+# cursor = db.cursor()
+ 
+# sql = """SELECT `name`, `age` 
+#       FROM `ursers` 
+#       ORDER BY `age` DESC"""
+
+
+# cursor.execute(sql)
+# results = cursor.fetchall()
+
+# for row in results:
+#     print(row[0] + row[1])
+ 
+# db.close()
+#__________
+if 'грушrа' in list2:
+    print("hi")
+
+for l in list2:
+    a = filter(list2, 'груша')
+print(a)
+print(list2)
+
+# if filter(list2, 'грRуша'):
+#     print(True)
+
+n =[]                  # наполнение списка цифрами
+o = 0
+while o < 10:
+    o = o+ 1
+    n.append(o)
+print(n)
+
+h = list("jkjlkjlk")   # строка в список
+print(h)
+
+words = ['cat', 'window', 'defenestrate']
+words_length = 0
+
+for word in words:
+    words_length += len(word)
+
+# "cat" length is 3
+# "window" length is 6
+# "defenestrate" length is 12
+print(assert words_length == (3 + 6 + 12))
+
+
+  
+
