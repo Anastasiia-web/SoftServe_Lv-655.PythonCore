@@ -69,3 +69,22 @@ from functools import reduce                                      # reduce !!! n
 
 b = reduce(lambda a, b: a if a>b else b, winning_lottery_numbers)
 print(b)
+
+#______________
+
+a=[]
+
+def foo():
+    a.append(1)
+    print(a)
+
+foo()
+
+h = str(d)                                              # как в списке списка найти и посчитать символ
+k = list(''.join(h))
+y = list(filter(lambda i: i == 'j', k))
+d = y.count('j')
+
+print(list(k))
+print(list(y))
+print(d)

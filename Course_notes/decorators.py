@@ -37,7 +37,7 @@
 #  <\ ______ />
 
 
-def star(func):
+def burger(func):
     def inner(*args, **kwargs):
         print("<\ ^^^^^^^ />")       
         func(*args, **kwargs)
@@ -45,7 +45,7 @@ def star(func):
     return inner
 
 
-@star
+@burger
 def printer(msg):
     print(msg)
 
