@@ -7,7 +7,7 @@ def y():
 y()                                                                                   # что делать if ... else ...
 
 
-fake = list(map(lambda l: l*2,winning_lottery_numbers))  # одно и тоже lambda + map()   list(map(lambda y: y*2, my_list))
+fake = list(map(lambda l: l*2, winning_lottery_numbers))  # одно и тоже lambda + map()   list(map(lambda y: y*2, my_list))
 print(fake)
 
 fak = [q*2 for q in winning_lottery_numbers]             # одно и тоже синтаксический сахар [i*2 for i in arr if ...]
