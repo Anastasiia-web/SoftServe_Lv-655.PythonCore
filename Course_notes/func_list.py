@@ -79,3 +79,27 @@ def foo():
     print(a)
 
 foo()
+
+## Пример как достать 1 символ в 2 слове в списке через   names[2][0]    !!!
+##                                                               
+names1 = ['Amir', 'Barry', 'Charles', 'Dao']
+names2 = [name.lower() for name in names1]
+
+print(names2[2][0])             # answer : c
+
+##  https://tproger.ru/explain/python-dictionaries/   работа со словарями !!!
+
+class Person:                  # My practice
+    def __init__(self,id):
+        self.id = id
+
+    def __str__(self):
+        print(self.id)
+    
+obama = Person(100)
+obama.__dict__['age'] = 49
+Person.__str__(obama)   # 100
+print(obama.age)    # 49
+print(obama.__dict__)    # {'id': 100, 'age': 49}
+print(Person.__dict__)   # просто список всего что на нём завязано, а не экземпляры
+print(obama.age + len(obama.__dict__))                             # answer : 51
