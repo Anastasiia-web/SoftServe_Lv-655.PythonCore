@@ -3,7 +3,7 @@
 a, b, = 0, 1
 end_of_loop = input('Enter a number :')
 
-while b <= 55:
+while b <= end_of_loop:
     print(b)
     a, b = b, a + b
     if b == end_of_loop:
@@ -51,9 +51,10 @@ while(n>0):
     n = n-1
 print("Factorial of the number is:", fact_num)
   
-
   
 # https://www.sanfoundry.com/python-program-find-factorial-number-without-recursion/  
 # A factorial variable is initialized to 1.
 # A while loop is used to multiply the number to the factorial variable and then the number is decremented each time.
 # This continues till the value of the number is greater than 0.
+## Факториалом числа называют произведение всех натуральных чисел до него включительно. ... 
+# Формула нахождения факториала: n! = 1 * 2 * …

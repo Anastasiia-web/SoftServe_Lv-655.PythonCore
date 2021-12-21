@@ -49,8 +49,8 @@ print(red)
 sentences = ['capitan America', 'capitan Jak', 'capitan']      # посчитать кол-во раз в списке) цикл for + count()
 count_c = 0
 for sentence in sentences:
-    cap_count += sentence.count('capitan')
-print(cap_count)
+    count_c += sentence.count('capitan')
+print(count_c)
 
 
 winning_lottery_numbers = [0, 4, 3, 2, 3, 1]                # max число
@@ -79,12 +79,3 @@ def foo():
     print(a)
 
 foo()
-
-h = str(d)                                              # как в списке списка найти и посчитать символ
-k = list(''.join(h))
-y = list(filter(lambda i: i == 'j', k))
-d = y.count('j')
-
-print(list(k))
-print(list(y))
-print(d)
