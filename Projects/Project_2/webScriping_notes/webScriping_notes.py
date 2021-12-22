@@ -20,7 +20,6 @@ link = link_to_certification.get('href')
 article = soup.find_all("p")
 
 exception_1 = "Create a class named MyClass:"
-
 exception_2 = "Start the Exercise"
 exception_3 = "We just launchedW3Schools videos"
 exception_4 = "If you want to report an error, or if you want to make a suggestion, do not hesitate to send us an e-mail:"
