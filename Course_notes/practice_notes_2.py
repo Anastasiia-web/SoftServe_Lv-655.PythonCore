@@ -11,17 +11,17 @@
 ## https://pythonworld.ru/tipy-dannyx-v-python/spiski-list-funkcii-i-metody-spiskov.html
 
 
-# n = int(input("?: "))                               # факториал
-# fact = 1
-# while n > 0:
-#     fact = fact * n
-#     n = n-1
-# print(fact)
-########                                              # фибоначи
-# a, b = 0, 1
-# while b <= 5:
-#     print(b)
-#     a, b = b, a + b
+n = int(input("?: "))                               # факториал
+fact = 1
+while n > 0:
+    fact = fact * n
+    n = n-1
+print(fact)
+#######                                              # фибоначи
+a, b = 0, 1
+while b <= 5:
+    print(b)
+    a, b = b, a + b
 
 #######
 v = ['h', 'd']
