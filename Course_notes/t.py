@@ -1,35 +1,35 @@
-# ###  WORKING my solution                 Test task 1 : make an array of indexes of "None" value out of given array
-# given_list = [4,"a", 5, "a"]
+###  WORKING my solution                 Test task 1 : make an array of indexes of "None" value out of given array
+given_list = [4,"a", 5, "a"]
 
-# enumerated_list = list(enumerate(given_list))  # [(0, 4), (1, 'a'), (2, 5), (3, 'a')]
+enumerated_list = list(enumerate(given_list))  # [(0, 4), (1, 'a'), (2, 5), (3, 'a')]
 
-# result = []
-# for key, value in enumerated_list:
-#     if value == "a":
-#         result.append(key)
-# print(result)                  # answer :  [1, 3]
+result = []
+for key, value in enumerated_list:
+    if value == "a":
+        result.append(key)
+print(result)                  # answer :  [1, 3]
 
 ### WORKING my solution   Test task 2 : выделить чётные и нечётные, посчитать и соединить в дикт {"even": n_e, "odd": n_o}
-# inp= str(234)               # 234
-# n = list(inp)               # ['2', '3', '4']
-# di = [int(i) for i in n]    # [2, 3, 4]     # синтаксич сахар
-# n_e = list(filter(lambda i: i%2 == 0, di))   # answer : [2, 4]
-# n_o = list(filter(lambda i: i%2 == 1, di))   # answer : [2, 4]
-# how_many_e = 0
-# for i in n_e: how_many_e += 1          # 2
-# how_many_o = 0
-# for i in n_o: how_many_o += 1     # 1
+inp= str(234)               # 234
+n = list(inp)               # ['2', '3', '4']
+di = [int(i) for i in n]    # [2, 3, 4]     # синтаксич сахар
+n_e = list(filter(lambda i: i%2 == 0, di))   # answer : [2, 4]
+n_o = list(filter(lambda i: i%2 == 1, di))   # answer : [2, 4]
+how_many_e = 0
+for i in n_e: how_many_e += 1          # 2
+how_many_o = 0
+for i in n_o: how_many_o += 1     # 1
 
-# result = {"even": how_many_e, "odd": how_many_o}   # {'even': 2, 'odd': 1}
+result = {"even": how_many_e, "odd": how_many_o}   # {'even': 2, 'odd': 1}
 
 ### WORKING my solution                                              Test task 3 : fibonacci
-# a, b = 0, 1
+a, b = 0, 1
 
-# while b <5:
-#     print(b)
-#     a, b = b, a+b
+while b <5:
+    print(b)
+    a, b = b, a+b
 
-#####  Why this answer!!!                                                 Test task 4 : what's the output? 
+##                                                                            Test task 4 : what's the output? 
 
 ## !!! ПОВЕРХНОСТНАЯ КОПИЯ 1 и 3 списков = 1 айди, второму обнулили список перед входом в функцию - [] !!!
 ##             __dir__) # пробить айди объектов !!!
