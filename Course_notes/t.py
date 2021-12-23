@@ -1,23 +1,113 @@
+# ###  WORKING my solution                 Test task 1 : make an array of indexes of "None" value out of given array
+# given_list = [4,"a", 5, "a"]
+
+# enumerated_list = list(enumerate(given_list))  # [(0, 4), (1, 'a'), (2, 5), (3, 'a')]
+
+# result = []
+# for key, value in enumerated_list:
+#     if value == "a":
+#         result.append(key)
+# print(result)                  # answer :  [1, 3]
+
+### WORKING my solution   Test task 2 : выделить чётные и нечётные, посчитать и соединить в дикт {"even": n_e, "odd": n_o}
+# inp= str(234)               # 234
+# n = list(inp)               # ['2', '3', '4']
+# di = [int(i) for i in n]    # [2, 3, 4]     # синтаксич сахар
+# n_e = list(filter(lambda i: i%2 == 0, di))   # answer : [2, 4]
+# n_o = list(filter(lambda i: i%2 == 1, di))   # answer : [2, 4]
+# how_many_e = 0
+# for i in n_e: how_many_e += 1          # 2
+# how_many_o = 0
+# for i in n_o: how_many_o += 1     # 1
+
+# result = {"even": how_many_e, "odd": how_many_o}   # {'even': 2, 'odd': 1}
+
+### WORKING my solution                                              Test task 3 : fibonacci
+# a, b = 0, 1
+
+# while b <5:
+#     print(b)
+#     a, b = b, a+b
+
+#####  Why this answer!!!                                                 Test task 4 : what's the output? 
+
+## !!! ПОВЕРХНОСТНАЯ КОПИЯ 1 и 3 списков = 1 айди, второму обнулили список перед входом в функцию - [] !!!
+##             __dir__) # пробить айди объектов !!!
+
 # def extendList(item, list=[]):
 #     list.append(item)
 #     return list
 
-# list1 = extendList(11)
-# list2 = extendList(156,[])
-# list3 = extendList('c')
+# list1 = extendList(11)      
+# list2 = extendList(156,[])  
+# list3 = extendList('c')      
+
+# print(list1) 
+# print(list2)
+# print(list3)
+
+# print(list1.__dir__) # пробить айди объектов !!!
+# print(list2.__dir__) # пробить айди объектов !!!
+# print(list3.__dir__) # пробить айди объектов !!!
 
 # print("list1 = {}".format(list1))
 # print("list2 = {}".format(list2))
 # print("list3 = {}".format(list3))
 
+###### how from input get even numbers  НАЙТИ БАГ НА ДОСУГЕ))
+# inp= str(234)               # 234
+# n = list(inp)               # ['2', '3', '4']
+# di = [int(i) for i in n]    # [2, 3, 4]     # синтаксич сахар
+# n_e = list(filter(lambda i: i%2 == 0, di))   # answer : [2, 4]
+# v = list(enumerate(di))   #  [(0, 2), (1, 3), (2, 4)]
+
+# val_e = []
+# for key, value in v:
+#     if value%2 ==0:
+#         val_e.append(key)
+# print(val_e)                #  [0, 2]  #  получили чётные 
+
+# coun_e = 0
+# for i in val_e:
+#     coun_e +=1
+# print(coun_e)                # посчитали чётные
+
+# val_o = []
+
+# for key, value in v:
+#     if value%2 ==0:
+#         val_o.append(key)
+# print(val_o)                #  [0, 2]  #  получили чётные 
+
+# coun_o = 0
+# for i in val_o:
+#     coun_o +=1
+# print(coun_o)                # посчитали чётные
+
+# res_n =[coun_e, coun_o]
+# print(res_n)
+###############################################
+# listl = [7,8]
+
+# new_list2 = list(filter(lambda x: (x%2 == 0), listl))     # отбираем чётные lambda !!! 
+#                                                           # Фильтру нужно 2 аргумента( как , что фильтруем)
+# print(new_list2)
+
+
+#########
+
 ############
-# def fibo(n):
-#     for i in range(0,n-1):
-#         f_n.append(f_n[i]) + f_n(i-1)
+
+### https://younglinux.info/algorithm/fibonacci
+### https://all-python.ru/raznoe/chisla-fibonachchi.html
+### https://habr.com/ru/post/261159/
 
 
-#     return f_n
+# list_value
 
+
+
+#########
 #### https://www.activestate.com/resources/datasheets/tkinter-cheatsheet-tips-and-tricks-to-create-your-user-interface/
 ## python cheat sheet Web-UI for Python
 
@@ -88,3 +178,36 @@
 # URL вида
 # http://www.example.com:8080/path/ указывает,
 # что веб-ресурс обслуживается веб-сервером на порту 8080.
+
+
+
+# ###  WORKING !!!                               Test task : make an array of indexes of "None" value out of given array
+# lis = [4,"a", 5, "a"]
+# l = list(enumerate(lis))  # [(0, 4), (1, 'a'), (2, 5), (3, 'a')]
+# x = []
+# for key, value in l:
+#     if value == "a":
+#         x.append(key)
+# print(x)                  # answer :  [1, 3]
+
+############
+
+# ind = lis.index("a")
+# print(ind)
+
+# for i in l:
+#     d = l.index("a")
+# print(l)
+
+# i = "a"
+# p = []
+# for i in lis:
+#     p.append(lis.index(i))
+# print(p)
+
+###########
+
+# d = 45
+# print(d.__dir__)                 # ID ОБЪЕКТА !!!
+
+###########

@@ -18,6 +18,20 @@ new_list2 = list(filter(lambda x: (x%2 == 0), listl))     # отбираем ч�
 print(new_list2)
 
 
+###
+###### how from input get even numbers
+# inp= str(234)               # 234
+# n = list(inp)               # ['2', '3', '4']
+# di = [int(i) for i in n]    # [2, 3, 4]     # синтаксич сахар
+# n_e = list(filter(lambda i: i%2 == 0, di))   # answer : [2, 4]            # фильтруем чётные в списке
+# v = list(enumerate(di))   #  [(0, 2), (1, 3), (2, 4)]   # списке enumarate
+# ind = []
+# for key, value in v:
+#     if value%2 ==0:
+#         ind.append(key)
+# print(ind)                #  [0, 2]         # считаем индексы для чётных в списке enumarate
+# res_e = dict(zip(ind, n_e)) #   {0: 2, 2: 4}  сoединяем два списка в диктионари
+
 #    [fnName] = lambda [args]: expression                   # lambda
 
 # NO "return"     !!!
