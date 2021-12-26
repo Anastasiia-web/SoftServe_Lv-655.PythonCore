@@ -38,7 +38,7 @@ kvps = {'1': 1, '2': 2}
 theCopy = dict(kvps)     # через конструктор dict() глубокая копия => другой объект !!!
 # print(kvps)       # {'1': 1, '2': 2}
 # print(theCopy)    # {'1': 1, '2': 2}
-kvps['1'] = 5     # theCopy of dictionary is NOT changed !!!!
+kvps['1'] = 5    
 # print(kvps)       # {'1': 5, '2': 2}
 # print(theCopy)    # {'1': 1, '2': 2}
 sum = kvps['1'] + theCopy['1']              # answer : 6 
@@ -293,6 +293,11 @@ print(type(f))   # answer : to ( ПОСЛЕДНЮЮ ЦИФРУ (индекс) Н
 x = 'f'
 y = 2
 print(x+y)     # answer : TypeError: can only concatenate str (not "int") to str
+
+###                                                        Test task
+f = {1:'2'}
+f = {}       # answer : 0 
+print(len(f))
 
 
 

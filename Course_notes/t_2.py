@@ -17,6 +17,49 @@
 # print(r"\nwoow")   5.0
 # \nwoow
 
-f = {1:'2'}
-f = {}
-print(len(f))
+
+# ###                                               Test task
+# f = {1:'2'}
+# f = {}       # answer : 0 
+# print(len(f))
+
+# n = ['h', 'j']
+# print(n.join())  # Error
+
+
+# name = ["Academy", 'h']
+# los = name.index("d")
+# print(los)
+
+# s=4.5
+# r=2
+# print(s//r)  # 2
+
+# confusion = {}          # 2 Test Task Confusion !!!!
+# confusion[1] = 1
+# confusion['1'] = 2  # {1: 1, '1': 2}
+# print(confusion)
+# confusion[1.0] = 4   # {1: 4, '1': 2}      !!! ТОТ ЖЕ КЛЮЧ ЕСЛИ [1]  и  [1.0]  !!!
+# print(confusion)
+# sum = 0
+# for k in confusion:
+#     sum += confusion[k]
+# print(sum)                           # answer : 4
+
+f =(9,8)
+print(type(f))   # <class 'tuple'>
+
+
+# class parent:
+#     def __init__(self, param):
+#         self.v1 = param
+# class child(parent):
+#     def __init__(self, param):
+#         self.v2 = param
+
+# obi = child(11)
+# print(obi.v1 + " " + obi.v2)
+
+y = 4.5
+u = 2
+print(y//u)   # 2.0
