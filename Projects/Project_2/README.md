@@ -4,7 +4,7 @@ Are you tired of ads which constantly blinking while you're trying to concentrat
 
 The goal of this project is to help you.
 
-Web Scraping helps to have notes in 1 sec from w3school.com
+Web Scraping helps to have notes in 1 sec from
 https://www.w3schools.com/python/python_classes.asp
 
 

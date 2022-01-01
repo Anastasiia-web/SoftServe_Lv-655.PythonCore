@@ -1,14 +1,14 @@
 import requests                                                                
 from datetime import date, timedelta
 import json
+import constants
+
+country = input('Country? ').capitalize()
 
 today = date.today()
 yesterday = today - timedelta(days=1)
 
-country = input('Country? ').capitalize()
-
-json_file_path = "Projects\Project_1\API_covid_statistics\src\countries_list.json"
-
+json_file_path = constants.JSON_FILE
 with open(json_file_path, 'r') as j:
     contries_list = json.loads(j.read())
 
@@ -16,6 +16,10 @@ for x in contries_list:
     if x['country'] == country:
         index_countries_list = contries_list.index(x)
         population = contries_list[index_countries_list]['population']
+        
+
+today = date.today()
+yesterday = today - timedelta(days=1)
 
 endpoint_last_day = requests.get(
     f"https://api.covid19api.com/country/{country}/status/confirmed?from=2020-03-01T00:00:00Z&to=2020-04-01T00:00:00Z",
