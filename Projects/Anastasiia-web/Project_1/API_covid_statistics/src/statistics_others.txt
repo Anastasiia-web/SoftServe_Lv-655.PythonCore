@@ -1,0 +1,9 @@
+2021-12-23  
+Spain        |  population             |  46796540 
+                last day confirmed         846664 
+2021-12-22  
+Turkey       |  population             |  82319724 
+                 last day confirmed         74455 
+2021-12-22  
+Egypt        |  population             |  98423595 
+                last day confirmed         7919 
