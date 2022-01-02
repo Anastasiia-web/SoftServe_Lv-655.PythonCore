@@ -343,3 +343,21 @@ def avg_5(a, b, r, d):
 print(avg_5(1.987635,2,3,4))  # 2.74691
 
 # Task 3 https://smartiqa.ru/python-workbook/float#1
+
+## Функция mul_to_int(a, b) может принимать целые или вещественные числа. 
+# Если результат умножения аргументов не имеет значимых чисел после запятой, 
+# то она возвращает его в виде целого числа. 
+# В противном случае – в виде float. 
+
+def mul_to_int(a, b):
+    res = a * b
+    if float(res).is_integer():
+        return int(res)
+    return res
+print(mul_to_int(3.0008, 5))  # 15.004
+
+
+
+
+
+
