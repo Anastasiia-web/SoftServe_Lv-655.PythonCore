@@ -229,6 +229,30 @@ print(all_eq(['крот', 'белка', 'выхухоль']))
 # l = ['Молоко', 'j', '2020 год']
 # for i in l:
 #     print(len(i))
+v = [19, 8.3, -4, 11, 0, 5]
+def the_biggest_number():
+    print(max(v))
+the_biggest_number()                            ### https://skerritt.blog/big-o/ examples python algorithms !!1
 
+# f = ['uiye', 'yoiokkm', 'iop']
+# def the_longest(): 
+words = ["dan","kar","dream","adsadsadad","AHAHAHAHAHAHHHAAHAHA","aaa"]  # Working!!! find the longest in the list
+w = max(words, key=len)
+print(w)
+print(type(w)) # str
+# print(the_longest())
 
+words = ["dan","kar","dream","adsadsadad","AHAHAHAHAHAHHHAAHAHA","aaa"]  # The same working!
+longest = 0
+for i in range(len(words)):
+    if len(words[i]) > len(words[longest]):
+        longest = i
+print(words[longest])
+
+words = ["dan","kar","dream","adsadsadad","AHAHAHAHAHAHHHAAHAHA","aaa"]  # Working!!! find the longest in the list
+best = 0
+for i in range(len(words)):
+    if len(words[i]) > len(words[best]):
+        best = i
+print(words[best])
 
